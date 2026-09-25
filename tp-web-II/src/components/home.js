@@ -1,6 +1,5 @@
 import { LitElement, html } from "lit";
 import { getProducts, getCategories, pictureURL } from "../api.js";
-import "/placeholder.svg";
 import "../index.css";
 
 export class HomeView extends LitElement {
