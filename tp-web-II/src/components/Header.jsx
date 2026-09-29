@@ -9,16 +9,9 @@ export default function Header() {
           <a href="#/" className="text-xl font-bold text-green-700">
             Inicio
           </a>
-          <a href="#/listado" className="text-sm font-semibold text-green-800 hover:underline">
-            Productos
-          </a>
+          <a href="#/listado" className="text-sm font-semibold text-green-800 hover:underline"> Productos</a>
         </div>
-        <a
-          href="#/carrito"
-          className="rounded-lg bg-white px-4 py-2 text-sm font-semibold text-green-800 shadow-sm transition hover:bg-green-100"
-        >
-          Carrito ({count})
-        </a>
+        <a href="#/carrito" className="rounded-lg bg-white px-4 py-2 text-sm font-semibold text-green-800 shadow-sm transition hover:bg-green-100">Carrito ({count}) </a>
       </nav>
     </header>
   );

@@ -1,4 +1,4 @@
-import "/data/home.js"; // define el custom element <home-view> (Lit)
+import "/data/home.js";
 
 export default function Home() {
   return <home-view />;

@@ -13,12 +13,11 @@ export default function Carrito() {
             <p className="text-gray-500">Tu carrito está vacío.</p>
             <a
               href="#/listado"
-              className="mt-4 inline-block rounded-lg bg-green-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-green-700"
-            >
-              Ver productos
-            </a>
+              className="mt-4 inline-block rounded-lg bg-green-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-green-700">Ver productos </a>
           </div>
-        ) : (
+        )
+        : 
+        (
           <>
             <ul className="mt-6 flex flex-col gap-3">
               {items.map((i) => (
@@ -36,7 +35,7 @@ export default function Carrito() {
                         onClick={() => setQty(i.id, i.qty - 1)}
                         className="h-7 w-7 rounded-lg border border-green-200 font-bold text-green-800 hover:bg-green-50"
                       >
-                        −
+                        -
                       </button>
                       <span className="w-6 text-center text-sm font-semibold">{i.qty}</span>
                       <button
