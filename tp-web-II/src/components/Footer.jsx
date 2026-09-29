@@ -1,10 +1,9 @@
-// Editá estos datos con los de tu tienda
 const INFORMACION = {
-  nombre: "Tu Tienda de Muebles",
-  descripcion: "Muebles para cada ambiente de tu hogar: living, comedor, dormitorio y oficina.",
-  correo: "contacto@tutienda.com",
-  telefono: "+54 11 0000-0000",
-  horario: "Lunes a viernes de 9 a 18 hs",
+  nombre: "MuebleMundo",
+  descripcion: "Muebles de todas las variedades. Veni y aprovecha nuestras ofertas y los nuevos productos!!!",
+  correo: "nose@gmail.com",
+  telefono: "+54 9 2901 12345",
+  horario: "Lunes a viernes de 08:00AM a 08:01AM ",
 };
 
 export default function PiePagina() {
@@ -15,16 +14,6 @@ export default function PiePagina() {
           <h2 className="text-lg font-bold text-beige-800">{INFORMACION.nombre}</h2>
           <p className="mt-2 text-sm text-beige-800">{INFORMACION.descripcion}</p>
         </div>
-
-        <nav aria-label="Navegación del pie de página">
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-beige-800">Navegación</h3>
-          <ul className="mt-2 space-y-1 text-sm text-beige-800">
-            <li><a href="./#/" className="hover:text-beige-700 hover:underline">Inicio</a></li>
-            <li><a href="./#/listado" className="hover:text-beige-700 hover:underline">Productos</a></li>
-            <li><a href="./#/carrito" className="hover:text-beige-700 hover:underline">Carrito</a></li>
-          </ul>
-        </nav>
-
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wide text-beige-800">Contacto</h3>
           <ul className="mt-2 space-y-1 text-sm text-beige-800">

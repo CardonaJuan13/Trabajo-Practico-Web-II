@@ -1,13 +1,17 @@
-<<<<<<< HEAD
-=======
-/*sin usar*/
+import Estructura from "./components/Layout.jsx";
+import Inicio from "./components/Home.jsx";
+import Listado from "./components/Listado.jsx";
+import Carrito from "./components/carrito.jsx";
+import { useRuta } from "./router.js";
 
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-
->>>>>>> 951da08 (.)
 function App() {
+  const { ruta, parametros } = useRuta();
+
+  let pagina;
+  if (ruta === "/listado") pagina = <Listado idCategoria={parametros.get("categoria")} />;
+  else if (ruta === "/carrito") pagina = <Carrito />;
+  else pagina = <Inicio />;
+
+  return <Estructura>{pagina}</Estructura>;
 }
-export default App      
+export default App;

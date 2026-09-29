@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* Paleta beige de la tienda (de más clara a más oscura) */
 @theme {
   --color-beige-50: #faf6ef;
   --color-beige-100: #f3ebdc;

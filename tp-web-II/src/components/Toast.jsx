@@ -5,10 +5,8 @@ export default function Notificacion() {
   const [notificacion, setNotificacion] = useState(null);
   const [visible, setVisible] = useState(false);
 
-  // Escucha las notificaciones que dispara data/toast.js
   useEffect(() => suscribirNotificaciones(setNotificacion), []);
 
-  // Entrada suave, y se oculta sola a los 3 segundos
   useEffect(() => {
     if (!notificacion) return;
     const animacion = requestAnimationFrame(() => setVisible(true));
@@ -46,7 +44,7 @@ export default function Notificacion() {
           aria-label="Cerrar notificación"
           className="text-beige-500 hover:text-beige-700"
         >
-          ×
+          X
         </button>
       </div>
     </div>
