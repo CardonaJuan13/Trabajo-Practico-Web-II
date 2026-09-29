@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit";
-import { getProducts, getCategories, pictureURL } from "../api.js";
-import "../index.css";
+import { getProducts, getCategories, pictureURL } from "../src/api.js";
+import "../src/index.css";
 
 export class CategoryView extends LitElement {
   createRenderRoot() {

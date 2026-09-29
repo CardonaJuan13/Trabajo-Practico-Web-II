@@ -1,5 +1,6 @@
 export const API_URL = "https://ecommerce.fedegonzalez.com";
-const TOKEN = "43795815";
+const TOKEN = "01020304";
+if (!TOKEN) console.error("Error al llamar a la API");
 
 export async function getJSON(path) {
   const res = await fetch(`${API_URL}${path}`, {

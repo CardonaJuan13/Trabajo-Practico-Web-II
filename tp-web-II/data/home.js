@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit";
-import { getProducts, getCategories, pictureURL } from "../api.js";
-import "../index.css";
+import { getProducts, getCategories, pictureURL } from "../src/api.js";
+import "../src/index.css";
 
 export class HomeView extends LitElement {
   createRenderRoot() {
@@ -31,7 +31,7 @@ export class HomeView extends LitElement {
     const all = await getProducts();
     this.products = all.filter((p) =>
       (p.tags || []).some((t) =>
-        ["promoción", "orgánico", "producto local"].includes(
+        ["destacado"].includes(
           t.title.toLowerCase()
         )
       )
@@ -58,7 +58,7 @@ export class HomeView extends LitElement {
         <h2 class="mb-3 text-lg font-bold text-green-700">Categorías</h2>
         <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
           ${this.categories.map((c) => html`
-            <a href="/listado.html?categoria=${c.id}"
+            <a href="#/listado?categoria=${c.id}"
                class="flex flex-col items-center gap-2 rounded-2xl border border-green-200 bg-green-50 p-4 text-center transition hover:border-green-400 hover:shadow-md">
               <img src="${pictureURL(c.picture)}" class="h-16 w-16 rounded-full" alt="${c.title}">
               <span class="text-sm font-semibold text-green-900">${c.title}</span>
