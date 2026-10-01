@@ -1,5 +1,5 @@
-## Trabajo Practico Medio Termino-Web II
-
-## Integrantes
+# Trabajo-Practico-Web-II
+Desarrollo frontend con Lit, Tailwind y React.
+# Integrantes
 Cardona Juan David
 Ezequiel Aranda
