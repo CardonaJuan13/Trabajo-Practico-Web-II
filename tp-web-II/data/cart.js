@@ -24,7 +24,6 @@ function guardar(nuevosArticulos) {
   avisar();
 }
 
-// Sincroniza si el carrito cambia en otra pestaña
 window.addEventListener("storage", (evento) => {
   if (evento.key === CLAVE) {
     articulos = leer();
