@@ -1,5 +1,7 @@
-# Trabajo-Practico-Web-II
+## Trabajo-Practico-Web-II
 Desarrollo frontend con Lit, Tailwind y React.
-# Integrantes
+## Integrantes
 Cardona Juan David
 Ezequiel Aranda
+
+### Aclaración, se utilizo IA
