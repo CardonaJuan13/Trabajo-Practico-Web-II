@@ -24,9 +24,7 @@ export default function Carrito() {
               Ver productos
             </a>
           </div>
-        )
-        : 
-        (
+        ) : (
           <>
             <ul className="mt-6 flex flex-col gap-3">
               {articulos.map((articulo) => (
@@ -44,7 +42,7 @@ export default function Carrito() {
                         onClick={() => cambiarCantidad(articulo.id, articulo.cantidad - 1)}
                         className="h-7 w-7 rounded-lg border border-beige-300 font-bold text-beige-800 hover:bg-beige-200"
                       >
-                        -
+                        −
                       </button>
                       <span className="w-6 text-center text-sm font-semibold">{articulo.cantidad}</span>
                       <button

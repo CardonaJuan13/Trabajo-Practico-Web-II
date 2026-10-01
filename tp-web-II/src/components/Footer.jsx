@@ -14,6 +14,7 @@ export default function PiePagina() {
           <h2 className="text-lg font-bold text-beige-800">{INFORMACION.nombre}</h2>
           <p className="mt-2 text-sm text-beige-800">{INFORMACION.descripcion}</p>
         </div>
+
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wide text-beige-800">Contacto</h3>
           <ul className="mt-2 space-y-1 text-sm text-beige-800">
